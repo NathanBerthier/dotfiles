@@ -91,7 +91,9 @@
       "*": true,
       "yaml": false,
       "plaintext": true,
-      "markdown": false
+      "markdown": true,
+      "solidity": false
     },
-    "errorLens.fontWeight": "bold"
+    "errorLens.fontWeight": "bold",
+    "workbench.colorTheme": "One Dark Pro Darker"
 }

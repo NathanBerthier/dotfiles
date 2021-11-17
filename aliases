@@ -6,5 +6,17 @@ alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 alias serve='ruby -run -e httpd . -p 8000 | open -a "Google Chrome" "http://localhost:${1:-8000}/"' # Or python -m SimpleHTTPServer :)
 
 # Hardhat aliases
-alias hr='npx hardhat run scripts/run.js'
-alias hdt='npx hardhat run scripts/deploy.js  --network rinkeby'
+# alias hr='npx hardhat run scripts/run.js'
+# alias hdt='npx hardhat run scripts/deploy.js  --network rinkeby'
+
+function contract {
+  if [ $1 = run ];
+  then
+    npx hardhat run scripts/run.js
+  elif [ $1 = deploy ];
+  then
+    npx hardhat run scripts/deploy.js  --network $2
+  else
+    echo "Usage: contract [run || deploy] [network]"
+  fi
+}

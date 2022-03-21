@@ -20,3 +20,6 @@ function contract {
     echo "Usage: contract [run || deploy] [network]"
   fi
 }
+
+# Cheat Sheet aliases
+alias cht="cht.sh"

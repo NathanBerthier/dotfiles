@@ -72,7 +72,7 @@
     "ruby.format": "rubocop",
     "ruby.lint":
     {
-        "rubocop": true
+        "rubocop": false
     },
     "ruby.intellisense": "rubyLocate",
     "workbench.startupEditor": "newUntitledFile",
@@ -92,8 +92,14 @@
       "yaml": false,
       "plaintext": true,
       "markdown": true,
-      "solidity": false
+      "solidity": false,
+      "ruby": true
     },
     "errorLens.fontWeight": "bold",
-    "workbench.colorTheme": "One Dark Pro Darker"
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "smooth"
 }
